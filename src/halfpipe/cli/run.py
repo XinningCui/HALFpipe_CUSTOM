@@ -3,9 +3,9 @@
 # vi: set ft=python sts=4 ts=4 sw=4 et:
 
 import logging
-from argparse import Namespace
+from argparse import Namespace  #parsing argument
 from pathlib import Path
-from typing import Any, Mapping
+from typing import Any, Mapping  #Any allows for any type of value, mapping is a more generic type annotation for dictionaries
 
 logger = logging.getLogger("halfpipe")
 
