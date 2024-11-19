@@ -17,7 +17,7 @@ def run_stage_ui(opts: Namespace) -> None:
     UIConfig.fs_root = str(opts.fs_root)
     opts.workdir = init_spec_ui(workdir=opts.workdir, debug=opts.debug)
 
-
+#define the thread numbers; intitialize the working flow and ui; manage clusters
 def run_stage_workflow(opts):
     from fmriprep import config
 
@@ -230,7 +230,7 @@ def run_stage_run(opts: Namespace):
         if len(chunks_to_run) > 1:
             logger.info(f"Completed chunk {i+1} of {len(chunks_to_run)}")
 
-
+#define What stages to run and How stages are executed
 def run(opts, should_run):
     import os
 
